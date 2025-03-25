@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-anchorscroll',
+    '@nuxthub/core'
   ],
   css: ['~/assets/css/main.css'],
   anchorscroll: {
