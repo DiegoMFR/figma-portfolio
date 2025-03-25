@@ -17,5 +17,6 @@ export default defineNuxtConfig({
   runtimeConfig: {
     figmaToken: process.env.FIGMA_TOKEN,
     figmaBaseUrl: "https://api.figma.com",
+    figmaFileName: process.env.FIGMA_FILE_NAME,
   }
 })

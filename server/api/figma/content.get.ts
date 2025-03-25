@@ -1,7 +1,7 @@
 
 export default defineEventHandler(async (event) => {
     const config = useRuntimeConfig(event);
-    const data = await $fetch(`${config.figmaBaseUrl}/v1/files/8OrW4fsejxTiiFMT7vZZbl`, { headers: { 'X-Figma-Token': config.figmaToken } });
+    const data = await $fetch(`${config.figmaBaseUrl}/v1/files/${config.figmaFileName}`, { headers: { 'X-Figma-Token': config.figmaToken } });
 
     const targetFramesWithTexts: any[] = [];
 
